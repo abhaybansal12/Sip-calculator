@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIP Calculator</title>
+  <link rel="stylesheet" href="sip.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SIP Calculator</h1>
+    <h4>[Avg. ROR on index funds is b/w (13-15)%]</h4>
+    <div class="form">
+      <label for="investment">Monthly Investment Amount (in rupees):</label>
+      <input type="number" id="investment" placeholder="Enter investment amount">
+      <label for="rate">Expected Annual Return Rate (%):</label>
+      <input type="number" id="rate" placeholder="Enter annual return rate">
+      <label for="years">Investment Period (Years):</label>
+      <input type="number" id="years" placeholder="Enter investment period">
+      <button onclick="calculate()">Calculate</button>
+    </div>
+    <div class="result">
+      <h2>Result:</h2>
+      <p id="output">Your investment will grow to <span id="result">0</span> rupees.</p>
+
+    </div>
+  </div>
+  
+  <script src="sip.js"></script>
+</body>
+</html>
